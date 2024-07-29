@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { IonicModule } from "@ionic/angular";
 
-import { IonicSelectableModule } from "ionic-selectable";
+import { IonicSelectableComponent } from "ionic-selectable";
 
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import {
@@ -30,7 +30,7 @@ import { CountryPlaceholder } from "./pipes/country-placeholder";
     CommonModule,
     FormsModule,
     IonicModule,
-    IonicSelectableModule,
+    IonicSelectableComponent,
     HttpClientModule,
     TranslateModule.forChild({
       loader: {
@@ -47,4 +47,4 @@ import { CountryPlaceholder } from "./pipes/country-placeholder";
   exports: [IonIntlTelInputComponent, IonIntlTelInputValidatorDirective],
   providers: [IonIntlTelInputService],
 })
-export class IonIntlTelInputModule {}
+export class IonIntlTelInputModule { }
